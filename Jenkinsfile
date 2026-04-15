@@ -44,7 +44,9 @@ pipeline {
 
     post {
         always {
-            sh "docker logout"
+            node('built-in') {
+                sh "docker logout || true"
+            }
         }
         success {
             echo "CI complete. Image pushed as ${DOCKERHUB_REPO}:${IMAGE_TAG}"
