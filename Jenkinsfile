@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
         DOCKERHUB_REPO        = 'defaultsaviour/runcalc-pro'
         IMAGE_TAG             = "v1.0.${BUILD_NUMBER}"
     }
