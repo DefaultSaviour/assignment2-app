@@ -1,4 +1,4 @@
-
+##### Proof of CI pipeline #######
 # RunCalc Pro 🏃
 
 A FastAPI-powered running analytics app with pace calculator, race predictor, HR training zones, split planner, and VO₂ max estimator.
